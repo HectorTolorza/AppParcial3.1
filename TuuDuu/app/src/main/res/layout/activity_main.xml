@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="calender.json"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Tu Agenda Personal"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Tuu-Duu"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/Btn_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/Btn_Login"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Btn_Registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/Btn_Registro"
+            android:textColor="@color/black"
+            android:background="@color/colorPrimary"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
