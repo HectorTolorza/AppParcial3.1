@@ -51,5 +51,17 @@
 
     <string name="Agregar_Nota_BD">Agregar</string>
 
+    <string name="Id_nota_Item">Id nota</string>
+    <string name="Uid_Usuario_Item">Uid del usuario</string>
+    <string name="Correo_usuario_Item">Correo de usuario</string>
+    <string name="Fecha_hora_registro_Item">Fecha y hora registro</string>
+    <string name="Titulo_Item">Titulo</string>
+    <string name="Descripcion_Item">Descripcion</string>
+    <string name="Fecha_Item">00/00/000</string>
+    <string name="Estado_Item">No finalizado</string>
+
+    <string name="ElijaOpcionTXT">Escoga una opcion</string>
+    <string name="CD_Eliminar">Eliminar</string>
+    <string name="CD_Actualizar">Actualizar</string>
 
 </resources>
