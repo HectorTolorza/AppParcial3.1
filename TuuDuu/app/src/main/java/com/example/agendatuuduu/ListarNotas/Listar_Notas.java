@@ -97,6 +97,13 @@ public class Listar_Notas extends AppCompatActivity {
                     public void onItemLongClick(View view, int position) {
 
                         String id_nota = getItem(position).getId_nota();
+                        String uid_usuario = getItem(position).getUid_usuario();
+                        String correo_usuario = getItem(position).getCorreo_usuario();
+                        String fecha_registro = getItem(position).getFecha_hora_actual();
+                        String titulo = getItem(position).getTitulo();
+                        String descripcion = getItem(position).getDescripcion();
+                        String fecha_nota = getItem(position).getFecha_nota();
+                        String estado = getItem(position).getEstado();
 
                         Button CD_Eliminar, CD_Actualizar;
 
@@ -117,7 +124,16 @@ public class Listar_Notas extends AppCompatActivity {
                             @Override
                             public void onClick(View view) {
                                 //Toast.makeText(Listar_Notas.this, "Actualizar nota", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(Listar_Notas.this, Actualizar_Nota.class));
+                                Intent intent = new Intent(Listar_Notas.this, Actualizar_Nota.class);
+                                intent.putExtra("id_nota", id_nota);
+                                intent.putExtra("uid_usuari", uid_usuario);
+                                intent.putExtra("corre_usuario", correo_usuario);
+                                intent.putExtra("fecha_registro", fecha_registro);
+                                intent.putExtra("titulo", titulo);
+                                intent.putExtra("descripcion", descripcion);
+                                intent.putExtra("fecha_nota", fecha_nota);
+                                intent.putExtra("estado", estado);
+                                startActivity(intent);
                                 dialog.dismiss();
                             }
                         });
