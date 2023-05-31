@@ -16,7 +16,7 @@
 
         <TextView
             android:id="@+id/Uid_Usuario"
-            android:text="@string/Uid_Usuario"
+            android:hint="@string/Uid_Usuario"
             android:textSize="18sp"
             android:fontFamily="@font/poppinsregular"
             android:textColor="@color/black"
